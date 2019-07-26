@@ -1,0 +1,24 @@
+{
+  "id" : "defd8fcb-c97b-457c-b1f0-287a8919f000",
+  "request" : {
+    "url" : "/blueCrystals/create",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "equalTo" : "application/json;charset=UTF-8"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.amount == 200)]"
+    } ]
+  },
+  "response" : {
+    "status" : 201,
+    "body" : "{\"amount\":{{{jsonPath request.body '$.amount'}}} ,\"price\":12000}",
+    "headers" : {
+      "Content-Type" : "application/json;charset=UTF-8"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "defd8fcb-c97b-457c-b1f0-287a8919f000"
+}
