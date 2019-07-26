@@ -14,7 +14,7 @@
   },
   "response" : {
     "status" : 201,
-    "body" : "{\"amount\":{{{jsonPath request.body '$.amount'}}} ,\"price\":10000}",
+    "body" : "{\"amount\":{{{jsonPath request.body '$.amount'}}} ,\"price\":12000}",
     "headers" : {
       "Content-Type" : "application/json;charset=UTF-8"
     },
