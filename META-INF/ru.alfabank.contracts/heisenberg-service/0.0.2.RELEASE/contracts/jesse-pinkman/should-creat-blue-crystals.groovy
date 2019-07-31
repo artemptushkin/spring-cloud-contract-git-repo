@@ -8,10 +8,10 @@ Contract.make {
 			header 'Content-Type' : 'application/json;charset=UTF-8'
 		}
 		body(
-			amount: 200
+			quantity: 200
 		)
 		bodyMatchers {
-			jsonPath('$.amount', byEquality())
+			jsonPath('$.quantity', byEquality())
 		}
 	}
 	response {
@@ -20,8 +20,8 @@ Contract.make {
 			header 'Content-Type' : 'application/json;charset=UTF-8'
 		}
 		body(
-			amount: fromRequest().body('$.amount'),
-			price: 12000d
+			amount: fromRequest().body('$.quantity'),
+			price: 10000d
 		)
 		bodyMatchers {
 			jsonPath('$.amount', byRegex('^\\d*$'))
