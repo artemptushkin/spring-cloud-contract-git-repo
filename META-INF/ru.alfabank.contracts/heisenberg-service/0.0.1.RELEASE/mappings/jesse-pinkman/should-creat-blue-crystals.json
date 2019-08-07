@@ -1,7 +1,7 @@
 {
-  "id" : "2fdd24ba-8615-44c7-993c-c6144b62451c",
+  "id" : "9354007b-af3d-4cd8-b22e-1fafa956b0ae",
   "request" : {
-    "url" : "/blueCrystals/create",
+    "url" : "/blueCrystals",
     "method" : "POST",
     "headers" : {
       "Content-Type" : {
@@ -20,5 +20,5 @@
     },
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "2fdd24ba-8615-44c7-993c-c6144b62451c"
+  "uuid" : "9354007b-af3d-4cd8-b22e-1fafa956b0ae"
 }

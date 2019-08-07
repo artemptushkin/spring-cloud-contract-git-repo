@@ -3,7 +3,7 @@ import org.springframework.cloud.contract.spec.Contract
 Contract.make {
 	request {
 		method 'POST'
-		url '/blueCrystals/create'
+		url '/blueCrystals'
 		headers {
 			header 'Content-Type' : 'application/json;charset=UTF-8'
 		}
