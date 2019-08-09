@@ -1,0 +1,20 @@
+{
+  "id" : "9f0cb91c-cf6b-4281-90bc-b120bbcff5dc",
+  "request" : {
+    "url" : "/blueCrystals",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "equalTo" : "application/json;charset=UTF-8"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.quantity == 1000)]"
+    } ]
+  },
+  "response" : {
+    "status" : 400,
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "9f0cb91c-cf6b-4281-90bc-b120bbcff5dc"
+}
